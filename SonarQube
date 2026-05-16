@@ -5,7 +5,7 @@ docker volume create --name sonarqube_logs
 docker volume create --name sonarqube_extensions
 
 echo "running the sonarqube container "
-docker run -d --name sonarqube \
+docker run -itd --name sonarqube \
 -p 9000:9000 \
 -e SONAR_JDBC_USERNAME=admin \
 -e SONAR_JDBC_PASSWORD=admin \
