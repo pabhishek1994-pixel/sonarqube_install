@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo chmod 777 /var/run/docker.sock
 echo "Create volumes for sonarqube for persist the data"
 docker volume create --name sonarqube_data
 docker volume create --name sonarqube_logs
